@@ -6,8 +6,10 @@ describe("About Operators (about_operators.js)", function() {
     for (let i = 0; i <= 5; i++) {
       result = result + i;
     }
+    //0 1 3 6 10 15
+    //1 2 3 4 5
     // Какое значение получится в результате?
-    expect(FILL_ME_IN).toBe(result);
+    expect(15).toBe(result);
   });
 
   it("assignment addition", function() {
@@ -17,7 +19,7 @@ describe("About Operators (about_operators.js)", function() {
       result += i;
     }
     // Какое значение получится в результате?
-    expect(FILL_ME_IN).toBe(result);
+    expect(15).toBe(result);
   });
 
   it("subtraction", function() {
@@ -25,8 +27,10 @@ describe("About Operators (about_operators.js)", function() {
     for (let i = 0; i <= 2; i++) {
       result = result - i;
     }
+    //5 4 2
+    //0 1 2
     // Какое значение получится в результате?
-    expect(FILL_ME_IN).toBe(result);
+    expect(2).toBe(result);
   });
 
   it("assignment subtraction", function() {
@@ -35,7 +39,7 @@ describe("About Operators (about_operators.js)", function() {
       result -= i;
     }
     // Какое значение получится в результате?
-    expect(FILL_ME_IN).toBe(result);
+    expect(2).toBe(result);
   });
 
   // Операторы присваивания доступны также для умножения и деления
@@ -47,18 +51,18 @@ describe("About Operators (about_operators.js)", function() {
     // Это точно так же, как и result = result % x
     result %= x;
     // Какое значение получится в результате?
-    expect(FILL_ME_IN).toBe(result);
+    expect(0).toBe(result);
   });
 
   // typeof возвращает строку с названием типа
   it("typeof", function() {
     // Какой тип у пустого объекта?
-    expect(FILL_ME_IN).toBe(typeof {});
+    expect("object").toBe(typeof {});
     // Какой тип у строк?
-    expect(FILL_ME_IN).toBe(typeof 'apple');
+    expect("string").toBe(typeof 'apple');
     // Какой тип у -5?
-    expect(FILL_ME_IN).toBe(typeof -5);
+    expect("number").toBe(typeof -5);
     // Какой тип у false?
-    expect(FILL_ME_IN).toBe(typeof false);
+    expect("boolean").toBe(typeof false);
   });
 });
